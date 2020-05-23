@@ -18,6 +18,7 @@
 		30E239E12478FAAA00FB9E5A /* FrogsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239E02478FAAA00FB9E5A /* FrogsListView.swift */; };
 		30E239E32478FABC00FB9E5A /* FrogsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239E22478FABC00FB9E5A /* FrogsListPresenter.swift */; };
 		30E239E52478FAD500FB9E5A /* FrogsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239E42478FAD500FB9E5A /* FrogsListRouter.swift */; };
+		30E239E92479166700FB9E5A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239E82479166700FB9E5A /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		30E239E02478FAAA00FB9E5A /* FrogsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogsListView.swift; sourceTree = "<group>"; };
 		30E239E22478FABC00FB9E5A /* FrogsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogsListPresenter.swift; sourceTree = "<group>"; };
 		30E239E42478FAD500FB9E5A /* FrogsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogsListRouter.swift; sourceTree = "<group>"; };
+		30E239E82479166700FB9E5A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		30E239DE2478F8C800FB9E5A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				30E239E72479165200FB9E5A /* Login */,
 				30E239DF2478F95B00FB9E5A /* FrogsList */,
 				30E239E62479114000FB9E5A /* FrogsDetail */,
 			);
@@ -167,6 +170,14 @@
 			children = (
 			);
 			path = FrogsDetail;
+			sourceTree = "<group>";
+		};
+		30E239E72479165200FB9E5A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				30E239E82479166700FB9E5A /* LoginView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30E239AF2478F5DA00FB9E5A /* AppDelegate.swift in Sources */,
+				30E239E92479166700FB9E5A /* LoginView.swift in Sources */,
 				30E239B12478F5DA00FB9E5A /* SceneDelegate.swift in Sources */,
 				30E239E12478FAAA00FB9E5A /* FrogsListView.swift in Sources */,
 				30E239B32478F5DA00FB9E5A /* RootView.swift in Sources */,
