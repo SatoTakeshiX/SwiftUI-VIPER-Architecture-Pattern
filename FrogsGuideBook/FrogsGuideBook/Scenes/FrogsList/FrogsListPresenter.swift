@@ -54,4 +54,14 @@ final class FrogsListPresenter: ObservableObject {
         let alert = Alert(title: Text("エラーが起こりました"), message: Text("しばらくしてから再度ためしてください。"), dismissButton: alertButton)
         return alert
     }
+
+    func makeQuestionButton() -> some View {
+      Button(action: goToHelp) {
+        Image(systemName: "questionmark.circle")
+      }
+    }
+
+    func goToHelp() {
+
+    }
 }

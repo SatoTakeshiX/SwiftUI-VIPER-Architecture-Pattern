@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		304D506224796103003BFFC4 /* ImageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304D506124796103003BFFC4 /* ImageCard.swift */; };
+		304D5064247961C2003BFFC4 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304D5063247961C2003BFFC4 /* BlurView.swift */; };
+		304D5066247968F1003BFFC4 /* Frog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304D5065247968F1003BFFC4 /* Frog.swift */; };
 		30E239AF2478F5DA00FB9E5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239AE2478F5DA00FB9E5A /* AppDelegate.swift */; };
 		30E239B12478F5DA00FB9E5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239B02478F5DA00FB9E5A /* SceneDelegate.swift */; };
 		30E239B32478F5DA00FB9E5A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239B22478F5DA00FB9E5A /* RootView.swift */; };
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		304D506124796103003BFFC4 /* ImageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCard.swift; sourceTree = "<group>"; };
+		304D5063247961C2003BFFC4 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		304D5065247968F1003BFFC4 /* Frog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frog.swift; sourceTree = "<group>"; };
 		30E239AB2478F5DA00FB9E5A /* FrogsGuideBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrogsGuideBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E239AE2478F5DA00FB9E5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30E239B02478F5DA00FB9E5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		304D506024796041003BFFC4 /* ViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				304D506124796103003BFFC4 /* ImageCard.swift */,
+				304D5063247961C2003BFFC4 /* BlurView.swift */,
+			);
+			path = ViewComponent;
+			sourceTree = "<group>";
+		};
 		30E239A22478F5DA00FB9E5A = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +129,7 @@
 				30E239AE2478F5DA00FB9E5A /* AppDelegate.swift */,
 				30E239B02478F5DA00FB9E5A /* SceneDelegate.swift */,
 				30E239DE2478F8C800FB9E5A /* Scenes */,
+				304D506024796041003BFFC4 /* ViewComponent */,
 				30E239EE24791D5300FB9E5A /* Entities */,
 				30E239B42478F5DC00FB9E5A /* Assets.xcassets */,
 				30E239B92478F5DC00FB9E5A /* LaunchScreen.storyboard */,
@@ -190,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				30E239EF24791D8A00FB9E5A /* AppState.swift */,
+				304D5065247968F1003BFFC4 /* Frog.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -337,7 +354,10 @@
 				30E239F024791D8A00FB9E5A /* AppState.swift in Sources */,
 				30E239AF2478F5DA00FB9E5A /* AppDelegate.swift in Sources */,
 				30E239E92479166700FB9E5A /* LoginView.swift in Sources */,
+				304D5064247961C2003BFFC4 /* BlurView.swift in Sources */,
 				30E239B12478F5DA00FB9E5A /* SceneDelegate.swift in Sources */,
+				304D506224796103003BFFC4 /* ImageCard.swift in Sources */,
+				304D5066247968F1003BFFC4 /* Frog.swift in Sources */,
 				30E239E12478FAAA00FB9E5A /* FrogsListView.swift in Sources */,
 				30E239B32478F5DA00FB9E5A /* RootView.swift in Sources */,
 				30E239E52478FAD500FB9E5A /* FrogsListRouter.swift in Sources */,
