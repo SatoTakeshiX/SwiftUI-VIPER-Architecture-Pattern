@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RootView.swift
 //  FrogsGuideBook
 //
 //  Created by satoutakeshi on 2020/05/23.
@@ -12,7 +12,7 @@ import SwiftUI
 struct RootView: View {
     var body: some View {
         NavigationView {
-            Text("content")
+            FrogsListView(presenter: FrogsListPresenter(params: .init(title: "Frogs Guide List")))
         }
     }
 }

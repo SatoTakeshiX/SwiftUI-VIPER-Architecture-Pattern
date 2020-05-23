@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		30E239AF2478F5DA00FB9E5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239AE2478F5DA00FB9E5A /* AppDelegate.swift */; };
 		30E239B12478F5DA00FB9E5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239B02478F5DA00FB9E5A /* SceneDelegate.swift */; };
-		30E239B32478F5DA00FB9E5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239B22478F5DA00FB9E5A /* ContentView.swift */; };
+		30E239B32478F5DA00FB9E5A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239B22478F5DA00FB9E5A /* RootView.swift */; };
 		30E239B52478F5DC00FB9E5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30E239B42478F5DC00FB9E5A /* Assets.xcassets */; };
 		30E239B82478F5DC00FB9E5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30E239B72478F5DC00FB9E5A /* Preview Assets.xcassets */; };
 		30E239BB2478F5DC00FB9E5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E239B92478F5DC00FB9E5A /* LaunchScreen.storyboard */; };
 		30E239C62478F5DC00FB9E5A /* FrogsGuideBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239C52478F5DC00FB9E5A /* FrogsGuideBookTests.swift */; };
 		30E239D12478F5DC00FB9E5A /* FrogsGuideBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239D02478F5DC00FB9E5A /* FrogsGuideBookUITests.swift */; };
+		30E239E12478FAAA00FB9E5A /* FrogsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239E02478FAAA00FB9E5A /* FrogsListView.swift */; };
+		30E239E32478FABC00FB9E5A /* FrogsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239E22478FABC00FB9E5A /* FrogsListPresenter.swift */; };
+		30E239E52478FAD500FB9E5A /* FrogsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239E42478FAD500FB9E5A /* FrogsListRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,7 @@
 		30E239AB2478F5DA00FB9E5A /* FrogsGuideBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrogsGuideBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E239AE2478F5DA00FB9E5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30E239B02478F5DA00FB9E5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		30E239B22478F5DA00FB9E5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30E239B22478F5DA00FB9E5A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		30E239B42478F5DC00FB9E5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30E239B72478F5DC00FB9E5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30E239BA2478F5DC00FB9E5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		30E239CC2478F5DC00FB9E5A /* FrogsGuideBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrogsGuideBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E239D02478F5DC00FB9E5A /* FrogsGuideBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogsGuideBookUITests.swift; sourceTree = "<group>"; };
 		30E239D22478F5DC00FB9E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30E239E02478FAAA00FB9E5A /* FrogsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogsListView.swift; sourceTree = "<group>"; };
+		30E239E22478FABC00FB9E5A /* FrogsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogsListPresenter.swift; sourceTree = "<group>"; };
+		30E239E42478FAD500FB9E5A /* FrogsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogsListRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,8 @@
 			children = (
 				30E239AE2478F5DA00FB9E5A /* AppDelegate.swift */,
 				30E239B02478F5DA00FB9E5A /* SceneDelegate.swift */,
-				30E239B22478F5DA00FB9E5A /* ContentView.swift */,
+				30E239B22478F5DA00FB9E5A /* RootView.swift */,
+				30E239DE2478F8C800FB9E5A /* Scenes */,
 				30E239B42478F5DC00FB9E5A /* Assets.xcassets */,
 				30E239B92478F5DC00FB9E5A /* LaunchScreen.storyboard */,
 				30E239BC2478F5DC00FB9E5A /* Info.plist */,
@@ -134,6 +141,32 @@
 				30E239D22478F5DC00FB9E5A /* Info.plist */,
 			);
 			path = FrogsGuideBookUITests;
+			sourceTree = "<group>";
+		};
+		30E239DE2478F8C800FB9E5A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				30E239DF2478F95B00FB9E5A /* FrogsList */,
+				30E239E62479114000FB9E5A /* FrogsDetail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		30E239DF2478F95B00FB9E5A /* FrogsList */ = {
+			isa = PBXGroup;
+			children = (
+				30E239E02478FAAA00FB9E5A /* FrogsListView.swift */,
+				30E239E22478FABC00FB9E5A /* FrogsListPresenter.swift */,
+				30E239E42478FAD500FB9E5A /* FrogsListRouter.swift */,
+			);
+			path = FrogsList;
+			sourceTree = "<group>";
+		};
+		30E239E62479114000FB9E5A /* FrogsDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FrogsDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +302,10 @@
 			files = (
 				30E239AF2478F5DA00FB9E5A /* AppDelegate.swift in Sources */,
 				30E239B12478F5DA00FB9E5A /* SceneDelegate.swift in Sources */,
-				30E239B32478F5DA00FB9E5A /* ContentView.swift in Sources */,
+				30E239E12478FAAA00FB9E5A /* FrogsListView.swift in Sources */,
+				30E239B32478F5DA00FB9E5A /* RootView.swift in Sources */,
+				30E239E52478FAD500FB9E5A /* FrogsListRouter.swift in Sources */,
+				30E239E32478FABC00FB9E5A /* FrogsListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
