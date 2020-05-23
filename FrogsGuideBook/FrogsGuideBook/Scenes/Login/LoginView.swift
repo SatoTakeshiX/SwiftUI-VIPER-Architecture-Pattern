@@ -11,6 +11,11 @@ import SwiftUI
 struct LoginView: View {
     @State var inputEmail: String = ""
     @State var inputPassword: String = ""
+    @ObservedObject var presenter: LoginPresenter
+    @EnvironmentObject var appState: AppState
+    init(appState: AppState) {
+        self.presenter = LoginPresenter(appState: appState)
+    }
     var body: some View {
         ScrollView {
             Image("frog-logo")
@@ -34,7 +39,7 @@ struct LoginView: View {
             .padding()
 
             Button(action: {
-
+                self.presenter.apply(inputs: .didTapLoginButton)
             }, label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
@@ -53,6 +58,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(appState: AppState())
     }
 }
