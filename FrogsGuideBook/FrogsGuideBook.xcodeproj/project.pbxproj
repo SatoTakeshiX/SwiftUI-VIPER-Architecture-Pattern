@@ -20,9 +20,7 @@
 		30E239E52478FAD500FB9E5A /* FrogsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239E42478FAD500FB9E5A /* FrogsListRouter.swift */; };
 		30E239E92479166700FB9E5A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239E82479166700FB9E5A /* LoginView.swift */; };
 		30E239EB24791AFB00FB9E5A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239EA24791AFB00FB9E5A /* LoginPresenter.swift */; };
-		30E239ED24791B0800FB9E5A /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239EC24791B0800FB9E5A /* LoginRouter.swift */; };
 		30E239F024791D8A00FB9E5A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239EF24791D8A00FB9E5A /* AppState.swift */; };
-		30E239F3247920F200FB9E5A /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E239F2247920F200FB9E5A /* RootPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +60,7 @@
 		30E239E42478FAD500FB9E5A /* FrogsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogsListRouter.swift; sourceTree = "<group>"; };
 		30E239E82479166700FB9E5A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		30E239EA24791AFB00FB9E5A /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		30E239EC24791B0800FB9E5A /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		30E239EF24791D8A00FB9E5A /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		30E239F2247920F200FB9E5A /* RootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,7 +182,6 @@
 			children = (
 				30E239E82479166700FB9E5A /* LoginView.swift */,
 				30E239EA24791AFB00FB9E5A /* LoginPresenter.swift */,
-				30E239EC24791B0800FB9E5A /* LoginRouter.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -203,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				30E239B22478F5DA00FB9E5A /* RootView.swift */,
-				30E239F2247920F200FB9E5A /* RootPresenter.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -345,8 +339,6 @@
 				30E239E92479166700FB9E5A /* LoginView.swift in Sources */,
 				30E239B12478F5DA00FB9E5A /* SceneDelegate.swift in Sources */,
 				30E239E12478FAAA00FB9E5A /* FrogsListView.swift in Sources */,
-				30E239F3247920F200FB9E5A /* RootPresenter.swift in Sources */,
-				30E239ED24791B0800FB9E5A /* LoginRouter.swift in Sources */,
 				30E239B32478F5DA00FB9E5A /* RootView.swift in Sources */,
 				30E239E52478FAD500FB9E5A /* FrogsListRouter.swift in Sources */,
 				30E239E32478FABC00FB9E5A /* FrogsListPresenter.swift in Sources */,
