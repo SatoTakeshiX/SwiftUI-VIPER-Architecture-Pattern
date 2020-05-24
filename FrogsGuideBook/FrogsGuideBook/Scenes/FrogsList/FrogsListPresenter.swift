@@ -34,7 +34,6 @@ final class FrogsListPresenter: ObservableObject {
         switch inputs {
             case .didTapAlertButton:
                 isShowError = true
-            break
             case .onApear:
             break
         }
