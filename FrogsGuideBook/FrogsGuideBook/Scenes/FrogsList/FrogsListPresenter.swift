@@ -12,19 +12,19 @@ import Combine
 final class FrogsListPresenter: ObservableObject {
 
     struct Parameter {
-        let title: String
+        let frogs: [Frog]
     }
 
     enum Inputs {
-        case didTapAlertButton
+        case didTapAboutButton
         case onApear
     }
 
     private let router = FrogsListRouter()
 
-    private let params: Parameter
+    let params: Parameter
 
-    @Published var isShowError = false
+    @Published var isShowAbout = false
 
     init(params: Parameter) {
         self.params = params
@@ -32,35 +32,35 @@ final class FrogsListPresenter: ObservableObject {
 
     func apply(inputs: Inputs) {
         switch inputs {
-            case .didTapAlertButton:
-                isShowError = true
+            case .didTapAboutButton:
+                isShowAbout = true
             case .onApear:
             break
         }
     }
 
-    func linkBuilder<Content: View>(@ViewBuilder content: () -> Content) -> some View {
+    func linkBuilder<Content: View>(frog: Frog, @ViewBuilder content: () -> Content) -> some View {
         ////ここここ、presenterでnavigaionlinkを作っている。そして、実際はrouterにまかせている。
-        NavigationLink(destination: router.makeDetailView()) {
+        NavigationLink(destination: router.makeDetailView(frog: frog)) {
             content()
         }
     }
 
-    func alertBuilder() -> Alert {
-        let alertButton = Alert.Button.default(Text("OK")) {
-            print("OKボタンをタップした")
-        }
-        let alert = Alert(title: Text("エラーが起こりました"), message: Text("しばらくしてから再度ためしてください。"), dismissButton: alertButton)
-        return alert
-    }
-
-    func makeQuestionButton() -> some View {
-      Button(action: goToHelp) {
+    func makeAboutButton() -> some View {
+      Button(action: goToAbout) {
         Image(systemName: "questionmark.circle")
       }
     }
 
-    func goToHelp() {
-
+    func makeAboutWebView() -> some View {
+        let url = URL(string: "https://github.com/SatoTakeshiX/SwiftUI-VIPER-Architecture-Pattern")!
+        let webView = WebView(url: url)
+        return webView
     }
+
+    // MARK: - Private
+    private func goToAbout() {
+        isShowAbout = true
+    }
+
 }

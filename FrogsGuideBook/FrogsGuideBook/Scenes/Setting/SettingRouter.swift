@@ -10,7 +10,7 @@ import SwiftUI
 
 final class SettingRouter {
     func makeAboutWebView() -> some View {
-        let url = URL(string: "https://github.com/SatoTakeshiX/SwiftUI-Coordinator-Pattern")!
+        let url = URL(string: "https://github.com/SatoTakeshiX/SwiftUI-VIPER-Architecture-Pattern")!
         let webView = WebView(url: url)
         return webView
     }

@@ -14,9 +14,7 @@ struct RootView: View {
     var body: some View {
         ZStack {
             if appState.isLogin {
-                NavigationView {
-                    FrogsListView(presenter: FrogsListPresenter(params: .init(title: "Frogs Guide List")))
-                }
+                HomeTabView()
             } else {
                 LoginView(appState: self.appState)
             }

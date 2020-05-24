@@ -19,6 +19,7 @@ struct SettingView: View {
         .sheet(isPresented: $presenter.isShowAbout) {
             self.presenter.makeAboutWebView()
         }
+        .navigationBarTitle("Setting", displayMode: .inline)
     }
 }
 

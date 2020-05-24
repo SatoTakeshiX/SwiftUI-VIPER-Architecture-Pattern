@@ -12,7 +12,6 @@ final class AppState {
     @Published var isLogin = false
 
     func loadState() {
-        // load from userDefault
         isLogin = true
     }
 }

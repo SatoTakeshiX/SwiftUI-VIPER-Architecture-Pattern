@@ -12,37 +12,30 @@ struct FrogsListView: View {
     @ObservedObject var presenter: FrogsListPresenter
     var body: some View {
         List {
-            ForEach(mockFrogs, id: \.id) { frog in
-                self.presenter.linkBuilder {
+            ForEach(presenter.params.frogs, id: \.id) { frog in
+                self.presenter.linkBuilder(frog: frog) {
                     ImageCard(imageName: frog.imageName, frogName: frog.name)
                     .frame(height: 240)
                 }
             }
-
-            Button(action: {
-                self.presenter.apply(inputs: .didTapAlertButton)
-            }, label: {
-                Text("show alert")
-            })
-            self.presenter.linkBuilder {
-                Text("link")
-            }
         }
-        .alert(isPresented: $presenter.isShowError, content: presenter.alertBuilder)
+        .sheet(isPresented: $presenter.isShowAbout) {
+            self.presenter.makeAboutWebView()
+        }
         .navigationBarTitle("Frogs Guide Book", displayMode: .inline)
-        .navigationBarItems(trailing: presenter.makeQuestionButton())
+        .navigationBarItems(trailing: presenter.makeAboutButton())
     }
 }
 
 struct FrogsListView_Previews: PreviewProvider {
     static var previews: some View {
-        let presenter = FrogsListPresenter(params: .init(title: "testtest"))
+        let presenter = FrogsListPresenter(params: .init(frogs: mockFrogs))
         let list = FrogsListView(presenter: presenter)
         return Group {
             NavigationView {
                 list
             }
-            presenter.makeQuestionButton()
+            presenter.makeAboutButton()
                 .previewLayout(.fixed(width: 50, height: 50))
         }
     }
