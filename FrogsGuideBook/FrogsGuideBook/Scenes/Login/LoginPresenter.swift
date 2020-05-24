@@ -16,7 +16,6 @@ final class LoginPresenter: ObservableObject {
     }
     
     init(appState: AppState) {
-        //isLogin = appState.isLogin
         self.appState = appState
 
         appState.$isLogin.sink { (isLogin) in

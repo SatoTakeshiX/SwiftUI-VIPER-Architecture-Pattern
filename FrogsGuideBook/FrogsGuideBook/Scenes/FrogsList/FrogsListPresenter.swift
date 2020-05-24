@@ -40,7 +40,6 @@ final class FrogsListPresenter: ObservableObject {
     }
 
     func linkBuilder<Content: View>(frog: Frog, @ViewBuilder content: () -> Content) -> some View {
-        ////ここここ、presenterでnavigaionlinkを作っている。そして、実際はrouterにまかせている。
         NavigationLink(destination: router.makeDetailView(frog: frog)) {
             content()
         }
