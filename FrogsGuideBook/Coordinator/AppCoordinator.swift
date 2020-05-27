@@ -11,8 +11,6 @@ import SwiftUI
 
 protocol Coordinatable {
     func start()
-    func finish()
-    func abort()
 }
 
 final class AppCoordinator: Coordinatable {
@@ -26,12 +24,6 @@ final class AppCoordinator: Coordinatable {
         let homeCoodinator = HomeCoordinator(params: ())
         window.rootViewController = UIHostingController(rootView: homeCoodinator.generateView())
         window.makeKeyAndVisible()
-    }
-
-    func finish() {
-    }
-
-    func abort() {
     }
 }
 
@@ -76,10 +68,10 @@ enum RequestState: CoordinatorState {
             case .home:
                 return .detail
             case .detail:
-                coordinator.finish()
+                //coordinator.finish()
             return nil
             case .setting:
-                coordinator.finish()
+                //coordinator.finish()
             return nil
         }
     }

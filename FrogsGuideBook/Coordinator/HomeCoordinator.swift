@@ -19,7 +19,7 @@ final class HomeCoordinator: Coordinatable {
         self.params = params
     }
 
-    let onStartSubject = PassthroughSubject<Body, Never>()
+    //let onStartSubject = PassthroughSubject<Body, Never>()
 
     let params: Parameters
     func start() {
@@ -30,14 +30,6 @@ final class HomeCoordinator: Coordinatable {
 
     func generateView() -> some View {
         return HomeView()
-    }
-
-    func finish() {
-
-    }
-
-    func abort() {
-
     }
 }
 
