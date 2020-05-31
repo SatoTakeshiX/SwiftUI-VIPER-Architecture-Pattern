@@ -10,10 +10,6 @@ import Combine
 
 final class AppState {
     @Published var isLogin = false
-
-    func loadState() {
-        isLogin = true
-    }
 }
 
 extension AppState: ObservableObject {}

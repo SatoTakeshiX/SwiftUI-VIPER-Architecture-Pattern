@@ -17,11 +17,6 @@ final class LoginPresenter: ObservableObject {
     
     init(appState: AppState) {
         self.appState = appState
-
-        appState.$isLogin.sink { (isLogin) in
-            print("isLogin")
-        }
-    .store(in: &cancellables)
     }
 
     func apply(inputs: Inputs) {
@@ -32,6 +27,5 @@ final class LoginPresenter: ObservableObject {
     }
 
     // Private
-    private var cancellables = Set<AnyCancellable>()
     private let appState: AppState
 }
