@@ -12,7 +12,6 @@ struct LoginView: View {
     @State var inputEmail: String = ""
     @State var inputPassword: String = ""
     @ObservedObject var presenter: LoginPresenter
-    @EnvironmentObject var appState: AppState
     init(appState: AppState) {
         self.presenter = LoginPresenter(appState: appState)
     }

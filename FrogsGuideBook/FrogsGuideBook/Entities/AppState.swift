@@ -8,8 +8,6 @@
 
 import Combine
 
-final class AppState {
+final class AppState: ObservableObject {
     @Published var isLogin = false
 }
-
-extension AppState: ObservableObject {}

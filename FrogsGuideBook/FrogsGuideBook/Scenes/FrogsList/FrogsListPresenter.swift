@@ -10,22 +10,15 @@ import SwiftUI
 import Combine
 
 final class FrogsListPresenter: ObservableObject {
-
     struct Parameter {
         let frogs: [Frog]
     }
-
     enum Inputs {
         case didTapAboutButton
-        case onApear
     }
-
     private let router = FrogsListRouter()
-
     let params: Parameter
-
     @Published var isShowAbout = false
-
     init(params: Parameter) {
         self.params = params
     }
@@ -34,8 +27,6 @@ final class FrogsListPresenter: ObservableObject {
         switch inputs {
             case .didTapAboutButton:
                 isShowAbout = true
-            case .onApear:
-            break
         }
     }
 

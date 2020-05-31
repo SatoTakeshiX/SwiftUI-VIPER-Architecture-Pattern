@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Frog {
+struct Frog: Identifiable {
     let id = UUID()
     let imageName: String
     let name: String

@@ -10,29 +10,12 @@ import SwiftUI
 import Combine
 
 final class FrogDetailPresenter: ObservableObject {
-
-    struct Parameter {
-        let frog: Frog
-    }
-
-    enum Inputs {
-        case didTapAskTheProfessor
-    }
-
     @Published var isShowError = false
     let frog: Frog
 
     init(frog: Frog) {
         self.frog = frog
     }
-
-    func apply(inputs: Inputs) {
-        switch inputs {
-            case .didTapAskTheProfessor:
-                isShowError = true
-        }
-    }
-
     func alertBuilder() -> Alert {
         let alertButton = Alert.Button.default(Text("OK")) {
             print("did tap alert OK button")
@@ -57,8 +40,7 @@ final class FrogDetailPresenter: ObservableObject {
     }
 
     // Mark: - Private
-
     private func didTapAskButton() {
-        apply(inputs: .didTapAskTheProfessor)
+        isShowError = true
     }
 }
